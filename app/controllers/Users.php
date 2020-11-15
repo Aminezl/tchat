@@ -4,6 +4,8 @@ class Users extends Controller {
         $this->userModel = $this->model('User');
     }
 
+
+    // if the email does not exist the account creation is done automatically
     public function login() {
 
         $currentSession = $_SESSION;
